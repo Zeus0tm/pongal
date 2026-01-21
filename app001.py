@@ -336,7 +336,7 @@ HTML_TEMPLATE = """
         <!-- User Information Form -->
         <div class="header">
             <div class="brain-icon">🧠</div>
-            <h1>Akinator</h1>
+            <h1>Guessing game</h1>
             <p class="subtitle">Think of a character, I'll read your mind!</p>
         </div>
         
@@ -348,7 +348,8 @@ HTML_TEMPLATE = """
             
             <div class="form-group">
                 <label for="phone">📱 Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
+                <input type="text" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" placeholder="Enter mobile number" required>
+
             </div>
             
             <div class="form-group">
